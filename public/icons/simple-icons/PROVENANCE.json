@@ -1,0 +1,23 @@
+{
+  "project": "Simple Icons",
+  "repository": "https://github.com/simple-icons/simple-icons",
+  "commit": "98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d",
+  "license": "CC0-1.0",
+  "assets": [
+    {
+      "file": "opencollective.svg",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/opencollective.svg",
+      "sha256": "441759afc6051a960a0746b7c950cf83fab009f1c7a62b8d89f8f6e7c186db97"
+    },
+    {
+      "file": "substack.svg",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/substack.svg",
+      "sha256": "2ccf1b8fcdda9a8073e5bcfbb57c1a99e114eba05a8d274ba7b2ed05d19b302a"
+    },
+    {
+      "file": "devdotto.svg",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/98820a4dc8c363ca72fa2c0d294ea4a0a9bba75d/icons/devdotto.svg",
+      "sha256": "c50c14c6dfcb6109d09421c92370c363fb61163abf7e348eb45656d36f6dc1ec"
+    }
+  ]
+}

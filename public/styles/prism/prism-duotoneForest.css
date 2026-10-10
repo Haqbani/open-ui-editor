@@ -1,0 +1,305 @@
+/*
+ * Adapted from https://raw.githubusercontent.com/PrismJS/prism-themes/447479fc7b2be2051fe27e561aceed7cc87a589f/themes/prism-duotone-forest.css
+ * License: MIT; see LICENSE-PRISM-THEMES.txt.
+ * Selectors are scoped to the editor's data-theme="duotoneForest" attribute.
+ */
+
+/*
+Name:   Duotone Forest
+Author: by Simurai, adapted from DuoTone themes for Atom (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+Conversion: Bram de Haan (http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-forest-dark.css)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+code[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+pre[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  font-family:
+    Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: #2a2d2a;
+  color: #687d68;
+}
+
+pre:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+  > code[class*="language-"] {
+  font-size: 1em;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+)::-moz-selection,
+pre[class*="language-"]:is(
+    [data-theme="duotoneForest"],
+    [data-theme="duotoneForest"] *
+  )
+  ::-moz-selection,
+code[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+)::-moz-selection,
+code[class*="language-"]:is(
+    [data-theme="duotoneForest"],
+    [data-theme="duotoneForest"] *
+  )
+  ::-moz-selection {
+  text-shadow: none;
+  background: #435643;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+)::selection,
+pre[class*="language-"]:is(
+    [data-theme="duotoneForest"],
+    [data-theme="duotoneForest"] *
+  )
+  ::selection,
+code[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+)::selection,
+code[class*="language-"]:is(
+    [data-theme="duotoneForest"],
+    [data-theme="duotoneForest"] *
+  )
+  ::selection {
+  text-shadow: none;
+  background: #435643;
+}
+
+/* Code blocks */
+pre[class*="language-"]:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre):is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+> code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.token.comment:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.prolog:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.doctype:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.cdata:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *) {
+  color: #535f53;
+}
+
+.token.punctuation:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  color: #535f53;
+}
+
+.token.namespace:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  opacity: 0.7;
+}
+
+.token.tag:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.operator:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.number:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *) {
+  color: #a2b34d;
+}
+
+.token.property:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.function:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  color: #687d68;
+}
+
+.token.tag-id:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.selector:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.atrule-id:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  color: #f0fff0;
+}
+
+code.language-javascript:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.attr-name:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  color: #b3d6b3;
+}
+
+code.language-css:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+code.language-scss:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.boolean:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.string:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.entity:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.url:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.language-css:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+  .token.string,
+.language-scss:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+  .token.string,
+.style:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+  .token.string,
+.token.attr-value:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.keyword:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.control:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.directive:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.unit:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.statement:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.regex:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *),
+.token.atrule:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *) {
+  color: #e5fb79;
+}
+
+.token.placeholder:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.variable:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  color: #e5fb79;
+}
+
+.token.deleted:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  text-decoration: line-through;
+}
+
+.token.inserted:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  border-bottom: 1px dotted #f0fff0;
+  text-decoration: none;
+}
+
+.token.italic:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *) {
+  font-style: italic;
+}
+
+.token.important:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+),
+.token.bold:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *) {
+  font-weight: bold;
+}
+
+.token.important:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  color: #b3d6b3;
+}
+
+.token.entity:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *) {
+  cursor: help;
+}
+
+pre:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+  > code.highlight {
+  outline: 0.4em solid #5c705c;
+  outline-offset: 0.4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers.line-numbers:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) .line-numbers-rows {
+  border-right-color: #2c302c;
+}
+
+.line-numbers:is([data-theme="duotoneForest"], [data-theme="duotoneForest"] *)
+  .line-numbers-rows
+  > span:before {
+  color: #3b423b;
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight.line-highlight:is(
+  [data-theme="duotoneForest"],
+  [data-theme="duotoneForest"] *
+) {
+  background: rgba(162, 179, 77, 0.2);
+  /*
+ biome-ignore lint/suspicious/noDuplicateProperties: Preserve the upstream solid-color fallback and prefixed gradient.
+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(162, 179, 77, 0.2) 70%,
+    rgba(162, 179, 77, 0)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(162, 179, 77, 0.2) 70%,
+    rgba(162, 179, 77, 0)
+  );
+}

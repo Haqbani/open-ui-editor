@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="280" viewBox="0 0 550 280" role="img" aria-labelledby="title">
+  <!-- Original Open UI Editor artwork, distributed under the project MIT license. -->
+  <title id="title">Social post preview placeholder</title>
+  <rect width="550" height="280" rx="12" fill="#f4f4f5" />
+  <rect x="24" y="24" width="502" height="232" rx="10" fill="#fafafa" stroke="#d4d4d8" stroke-width="2" />
+  <circle cx="67" cy="65" r="19" fill="#e4e4e7" />
+  <rect x="101" y="50" width="132" height="10" rx="5" fill="#a1a1aa" />
+  <rect x="101" y="71" width="90" height="7" rx="3.5" fill="#d4d4d8" />
+  <rect x="48" y="108" width="396" height="9" rx="4.5" fill="#d4d4d8" />
+  <rect x="48" y="130" width="426" height="9" rx="4.5" fill="#d4d4d8" />
+  <rect x="48" y="152" width="307" height="9" rx="4.5" fill="#d4d4d8" />
+  <path d="M48 187H502" stroke="#e4e4e7" stroke-width="2" />
+  <circle cx="56" cy="216" r="6" fill="#d4d4d8" />
+  <rect x="74" y="213" width="42" height="6" rx="3" fill="#e4e4e7" />
+  <circle cx="153" cy="216" r="6" fill="#d4d4d8" />
+  <rect x="171" y="213" width="42" height="6" rx="3" fill="#e4e4e7" />
+</svg>

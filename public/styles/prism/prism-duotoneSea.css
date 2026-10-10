@@ -1,0 +1,247 @@
+/*
+ * Adapted from https://raw.githubusercontent.com/PrismJS/prism-themes/447479fc7b2be2051fe27e561aceed7cc87a589f/themes/prism-duotone-sea.css
+ * License: MIT; see LICENSE-PRISM-THEMES.txt.
+ * Selectors are scoped to the editor's data-theme="duotoneSea" attribute.
+ */
+
+/*
+Name: Duotone Sea
+Author: by Simurai, adapted from DuoTone themes by Simurai for Atom (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+Conversion: Bram de Haan (http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-sea-dark.css)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+code[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+),
+pre[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+) {
+  font-family:
+    Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: #1d262f;
+  color: #57718e;
+}
+
+pre:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *)
+  > code[class*="language-"] {
+  font-size: 1em;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+)::-moz-selection,
+pre[class*="language-"]:is(
+    [data-theme="duotoneSea"],
+    [data-theme="duotoneSea"] *
+  )
+  ::-moz-selection,
+code[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+)::-moz-selection,
+code[class*="language-"]:is(
+    [data-theme="duotoneSea"],
+    [data-theme="duotoneSea"] *
+  )
+  ::-moz-selection {
+  text-shadow: none;
+  background: #004a9e;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+)::selection,
+pre[class*="language-"]:is(
+    [data-theme="duotoneSea"],
+    [data-theme="duotoneSea"] *
+  )
+  ::selection,
+code[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+)::selection,
+code[class*="language-"]:is(
+    [data-theme="duotoneSea"],
+    [data-theme="duotoneSea"] *
+  )
+  ::selection {
+  text-shadow: none;
+  background: #004a9e;
+}
+
+/* Code blocks */
+pre[class*="language-"]:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+) {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre):is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *)
+> code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.token.comment:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.prolog:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.doctype:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.cdata:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #4a5f78;
+}
+
+.token.punctuation:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #4a5f78;
+}
+
+.token.namespace:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  opacity: 0.7;
+}
+
+.token.tag:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.operator:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.number:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #0aa370;
+}
+
+.token.property:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.function:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #57718e;
+}
+
+.token.tag-id:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.selector:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.atrule-id:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #ebf4ff;
+}
+
+code.language-javascript:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+),
+.token.attr-name:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #7eb6f6;
+}
+
+code.language-css:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+code.language-scss:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.boolean:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.string:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.entity:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.url:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.language-css:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *)
+  .token.string,
+.language-scss:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *)
+  .token.string,
+.style:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) .token.string,
+.token.attr-value:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.keyword:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.control:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.directive:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.unit:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.statement:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.regex:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.atrule:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #47ebb4;
+}
+
+.token.placeholder:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.variable:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #47ebb4;
+}
+
+.token.deleted:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  text-decoration: line-through;
+}
+
+.token.inserted:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  border-bottom: 1px dotted #ebf4ff;
+  text-decoration: none;
+}
+
+.token.italic:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  font-style: italic;
+}
+
+.token.important:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *),
+.token.bold:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  font-weight: bold;
+}
+
+.token.important:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  color: #7eb6f6;
+}
+
+.token.entity:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *) {
+  cursor: help;
+}
+
+pre:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *)
+  > code.highlight {
+  outline: 0.4em solid #34659d;
+  outline-offset: 0.4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers.line-numbers:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+) .line-numbers-rows {
+  border-right-color: #1f2932;
+}
+
+.line-numbers:is([data-theme="duotoneSea"], [data-theme="duotoneSea"] *)
+  .line-numbers-rows
+  > span:before {
+  color: #2c3847;
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight.line-highlight:is(
+  [data-theme="duotoneSea"],
+  [data-theme="duotoneSea"] *
+) {
+  background: rgba(10, 163, 112, 0.2);
+  /*
+ biome-ignore lint/suspicious/noDuplicateProperties: Preserve the upstream solid-color fallback and prefixed gradient.
+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(10, 163, 112, 0.2) 70%,
+    rgba(10, 163, 112, 0)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(10, 163, 112, 0.2) 70%,
+    rgba(10, 163, 112, 0)
+  );
+}

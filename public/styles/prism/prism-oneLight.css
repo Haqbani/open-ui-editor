@@ -1,0 +1,660 @@
+/*
+ * Adapted from https://raw.githubusercontent.com/PrismJS/prism-themes/447479fc7b2be2051fe27e561aceed7cc87a589f/themes/prism-one-light.css
+ * License: MIT; see LICENSE-PRISM-THEMES.txt.
+ * Selectors are scoped to the editor's data-theme="oneLight" attribute.
+ */
+
+/**
+ * One Light theme for prism.js
+ * Based on Atom's One Light theme: https://github.com/atom/atom/tree/master/packages/one-light-syntax
+ */
+
+/**
+ * One Light colours (accurate as of commit eb064bf on 19 Feb 2021)
+ * From colors.less
+ * --mono-1: hsl(230, 8%, 24%);
+ * --mono-2: hsl(230, 6%, 44%);
+ * --mono-3: hsl(230, 4%, 64%)
+ * --hue-1: hsl(198, 99%, 37%);
+ * --hue-2: hsl(221, 87%, 60%);
+ * --hue-3: hsl(301, 63%, 40%);
+ * --hue-4: hsl(119, 34%, 47%);
+ * --hue-5: hsl(5, 74%, 59%);
+ * --hue-5-2: hsl(344, 84%, 43%);
+ * --hue-6: hsl(35, 99%, 36%);
+ * --hue-6-2: hsl(35, 99%, 40%);
+ * --syntax-fg: hsl(230, 8%, 24%);
+ * --syntax-bg: hsl(230, 1%, 98%);
+ * --syntax-gutter: hsl(230, 1%, 62%);
+ * --syntax-guide: hsla(230, 8%, 24%, 0.2);
+ * --syntax-accent: hsl(230, 100%, 66%);
+ * From syntax-variables.less
+ * --syntax-selection-color: hsl(230, 1%, 90%);
+ * --syntax-gutter-background-color-selected: hsl(230, 1%, 90%);
+ * --syntax-cursor-line: hsla(230, 8%, 24%, 0.05);
+ */
+
+code[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+pre[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  background: hsl(230, 1%, 98%);
+  color: hsl(230, 8%, 24%);
+  font-family:
+    "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Selection */
+code[class*="language-"]:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+)::-moz-selection,
+code[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  *::-moz-selection,
+pre[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  *::-moz-selection {
+  background: hsl(230, 1%, 90%);
+  color: inherit;
+}
+
+code[class*="language-"]:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+)::selection,
+code[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  *::selection,
+pre[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  *::selection {
+  background: hsl(230, 1%, 90%);
+  color: inherit;
+}
+
+/* Code blocks */
+pre[class*="language-"]:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+/* Inline code */
+:not(pre):is([data-theme="oneLight"], [data-theme="oneLight"] *)
+> code[class*="language-"] {
+  padding: 0.2em 0.3em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.prolog:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.cdata:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(230, 4%, 64%);
+}
+
+.token.doctype:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.punctuation:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.entity:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(230, 8%, 24%);
+}
+
+.token.attr-name:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.class-name:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.boolean:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.constant:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.number:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.atrule:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(35, 99%, 36%);
+}
+
+.token.keyword:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(301, 63%, 40%);
+}
+
+.token.property:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.tag:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.symbol:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.deleted:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.important:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(5, 74%, 59%);
+}
+
+.token.selector:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.string:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.char:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.builtin:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.inserted:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.regex:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.attr-value:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.attr-value:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .token.punctuation {
+  color: hsl(119, 34%, 47%);
+}
+
+.token.variable:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.operator:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.function:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(221, 87%, 60%);
+}
+
+.token.url:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  color: hsl(198, 99%, 37%);
+}
+
+/* HTML overrides */
+.token.attr-value:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+> .token.punctuation.attr-equals,
+.token.special-attr:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .token.attr-value
+  > .token.value.css {
+  color: hsl(230, 8%, 24%);
+}
+
+/* CSS overrides */
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+.token.selector {
+  color: hsl(5, 74%, 59%);
+}
+
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.property {
+  color: hsl(230, 8%, 24%);
+}
+
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.function,
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url
+  > .token.function {
+  color: hsl(198, 99%, 37%);
+}
+
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url
+  > .token.string.url {
+  color: hsl(119, 34%, 47%);
+}
+
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.important,
+.language-css:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.atrule
+  .token.rule {
+  color: hsl(301, 63%, 40%);
+}
+
+/* JS overrides */
+.language-javascript:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+.token.operator {
+  color: hsl(301, 63%, 40%);
+}
+
+.language-javascript:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.template-string
+  > .token.interpolation
+  > .token.interpolation-punctuation.punctuation {
+  color: hsl(344, 84%, 43%);
+}
+
+/* JSON overrides */
+.language-json:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+.token.operator {
+  color: hsl(230, 8%, 24%);
+}
+
+.language-json:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.null.keyword {
+  color: hsl(35, 99%, 36%);
+}
+
+/* MD overrides */
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+.token.url,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url
+  > .token.operator,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url-reference.url
+  > .token.string {
+  color: hsl(230, 8%, 24%);
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url
+  > .token.content {
+  color: hsl(221, 87%, 60%);
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url
+  > .token.url,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.url-reference.url {
+  color: hsl(198, 99%, 37%);
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.blockquote.punctuation,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.hr.punctuation {
+  color: hsl(230, 4%, 64%);
+  font-style: italic;
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.code-snippet {
+  color: hsl(119, 34%, 47%);
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.bold
+  .token.content {
+  color: hsl(35, 99%, 36%);
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.italic
+  .token.content {
+  color: hsl(301, 63%, 40%);
+}
+
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.strike
+  .token.content,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.strike
+  .token.punctuation,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.list.punctuation,
+.language-markdown:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.title.important
+  > .token.punctuation {
+  color: hsl(5, 74%, 59%);
+}
+
+/* General */
+.token.bold:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  font-weight: bold;
+}
+
+.token.comment:is([data-theme="oneLight"], [data-theme="oneLight"] *),
+.token.italic:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  font-style: italic;
+}
+
+.token.entity:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  cursor: help;
+}
+
+.token.namespace:is([data-theme="oneLight"], [data-theme="oneLight"] *) {
+  opacity: 0.8;
+}
+
+/* Plugin overrides */
+/* Selectors should have higher specificity than those in the plugins' default stylesheets */
+
+/* Show Invisibles plugin overrides */
+.token.token.tab:not(:empty):is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before,
+.token.token.cr:is([data-theme="oneLight"], [data-theme="oneLight"] *):before,
+.token.token.lf:is([data-theme="oneLight"], [data-theme="oneLight"] *):before,
+.token.token.space:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before {
+  color: hsla(230, 8%, 24%, 0.2);
+}
+
+/* Toolbar plugin overrides */
+/* Space out all buttons and move them away from the right edge of the code block */
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item {
+  margin-right: 0.4em;
+}
+
+/* Styling the buttons */
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > button,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > a,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > span {
+  background: hsl(230, 1%, 90%);
+  color: hsl(230, 6%, 44%);
+  padding: 0.1em 0.4em;
+  border-radius: 0.3em;
+}
+
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > button:hover,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > button:focus,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > a:hover,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > a:focus,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > span:hover,
+div.code-toolbar:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > .toolbar.toolbar
+  > .toolbar-item
+  > span:focus {
+  background: hsl(230, 1%, 78%); /* custom: darken(--syntax-bg, 20%) */
+  color: hsl(230, 8%, 24%);
+}
+
+/* Line Highlight plugin overrides */
+/* The highlighted line itself */
+.line-highlight.line-highlight:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) {
+  background: hsla(230, 8%, 24%, 0.05);
+}
+
+/* Default line numbers in Line Highlight plugin */
+.line-highlight.line-highlight:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before,
+.line-highlight.line-highlight[data-end]:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):after {
+  background: hsl(230, 1%, 90%);
+  color: hsl(230, 8%, 24%);
+  padding: 0.1em 0.6em;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2); /* same as Toolbar plugin default */
+}
+
+/* Hovering over a linkable line number (in the gutter area) */
+/* Requires Line Numbers plugin as well */
+pre[id].linkable-line-numbers.linkable-line-numbers:is(
+    [data-theme="oneLight"],
+    [data-theme="oneLight"] *
+  )
+  span.line-numbers-rows
+  > span:hover:before {
+  background-color: hsla(230, 8%, 24%, 0.05);
+}
+
+/* Line Numbers and Command Line plugins overrides */
+/* Line separating gutter from coding area */
+.line-numbers.line-numbers:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) .line-numbers-rows,
+.command-line:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .command-line-prompt {
+  border-right-color: hsla(230, 8%, 24%, 0.2);
+}
+
+/* Stuff in the gutter */
+.line-numbers:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .line-numbers-rows
+  > span:before,
+.command-line:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .command-line-prompt
+  > span:before {
+  color: hsl(230, 1%, 62%);
+}
+
+/* Match Braces plugin overrides */
+/* Note: Outline colour is inherited from the braces */
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+.token.token.punctuation.brace-level-1,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-5,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-9 {
+  color: hsl(5, 74%, 59%);
+}
+
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-2,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-6,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-10 {
+  color: hsl(119, 34%, 47%);
+}
+
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-3,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-7,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-11 {
+  color: hsl(221, 87%, 60%);
+}
+
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-4,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-8,
+.rainbow-braces:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  .token.token.punctuation.brace-level-12 {
+  color: hsl(301, 63%, 40%);
+}
+
+/* Diff Highlight plugin overrides */
+/* Taken from https://github.com/atom/github/blob/master/styles/variables.less */
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.deleted:not(.prefix),
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.deleted:not(.prefix) {
+  background-color: hsla(353, 100%, 66%, 0.15);
+}
+
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.deleted:not(.prefix)::-moz-selection,
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.deleted:not(.prefix)
+  *::-moz-selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.deleted:not(.prefix)::-moz-selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.deleted:not(.prefix)
+  *::-moz-selection {
+  background-color: hsla(353, 95%, 66%, 0.25);
+}
+
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.deleted:not(.prefix)::selection,
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.deleted:not(.prefix)
+  *::selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.deleted:not(.prefix)::selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.deleted:not(.prefix)
+  *::selection {
+  background-color: hsla(353, 95%, 66%, 0.25);
+}
+
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.inserted:not(.prefix),
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.inserted:not(.prefix) {
+  background-color: hsla(137, 100%, 55%, 0.15);
+}
+
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.inserted:not(.prefix)::-moz-selection,
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.inserted:not(.prefix)
+  *::-moz-selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.inserted:not(.prefix)::-moz-selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.inserted:not(.prefix)
+  *::-moz-selection {
+  background-color: hsla(135, 73%, 55%, 0.25);
+}
+
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.inserted:not(.prefix)::selection,
+pre.diff-highlight:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code
+  .token.token.inserted:not(.prefix)
+  *::selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.inserted:not(.prefix)::selection,
+pre:is([data-theme="oneLight"], [data-theme="oneLight"] *)
+  > code.diff-highlight
+  .token.token.inserted:not(.prefix)
+  *::selection {
+  background-color: hsla(135, 73%, 55%, 0.25);
+}
+
+/* Previewers plugin overrides */
+/* Based on https://github.com/atom-community/atom-ide-datatip/blob/master/styles/atom-ide-datatips.less and https://github.com/atom/atom/blob/master/packages/one-light-ui */
+/* Border around popup */
+.prism-previewer.prism-previewer:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before,
+.prism-previewer-gradient.prism-previewer-gradient:is(
+    [data-theme="oneLight"],
+    [data-theme="oneLight"] *
+  )
+  div {
+  border-color: hsl(0, 0, 95%);
+}
+
+/* Angle and time should remain as circles and are hence not included */
+.prism-previewer-color.prism-previewer-color:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before,
+.prism-previewer-gradient.prism-previewer-gradient:is(
+    [data-theme="oneLight"],
+    [data-theme="oneLight"] *
+  )
+  div,
+.prism-previewer-easing.prism-previewer-easing:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before {
+  border-radius: 0.3em;
+}
+
+/* Triangles pointing to the code */
+.prism-previewer.prism-previewer:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):after {
+  border-top-color: hsl(0, 0, 95%);
+}
+
+.prism-previewer-flipped.prism-previewer-flipped.after:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) {
+  border-bottom-color: hsl(0, 0, 95%);
+}
+
+/* Background colour within the popup */
+.prism-previewer-angle.prism-previewer-angle:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before,
+.prism-previewer-time.prism-previewer-time:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+):before,
+.prism-previewer-easing.prism-previewer-easing:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) {
+  background: hsl(0, 0%, 100%);
+}
+
+/* For angle, this is the positive area (eg. 90deg will display one quadrant in this colour) */
+/* For time, this is the alternate colour */
+.prism-previewer-angle.prism-previewer-angle:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) circle,
+.prism-previewer-time.prism-previewer-time:is(
+    [data-theme="oneLight"],
+    [data-theme="oneLight"] *
+  )
+  circle {
+  stroke: hsl(230, 8%, 24%);
+  stroke-opacity: 1;
+}
+
+/* Stroke colours of the handle, direction point, and vector itself */
+.prism-previewer-easing.prism-previewer-easing:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) circle,
+.prism-previewer-easing.prism-previewer-easing:is(
+    [data-theme="oneLight"],
+    [data-theme="oneLight"] *
+  )
+  path,
+.prism-previewer-easing.prism-previewer-easing:is(
+    [data-theme="oneLight"],
+    [data-theme="oneLight"] *
+  )
+  line {
+  stroke: hsl(230, 8%, 24%);
+}
+
+/* Fill colour of the handle */
+.prism-previewer-easing.prism-previewer-easing:is(
+  [data-theme="oneLight"],
+  [data-theme="oneLight"] *
+) circle {
+  fill: transparent;
+}

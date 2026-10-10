@@ -1,0 +1,169 @@
+/*
+ * Adapted from https://raw.githubusercontent.com/PrismJS/prism/298b75f1764c4abfe76d997394b7b149845f685a/themes/prism.css
+ * License: MIT; see LICENSE-PRISM.txt.
+ * Selectors are scoped to the editor's data-theme="default" attribute.
+ */
+
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"]:is([data-theme="default"], [data-theme="default"] *),
+pre[class*="language-"]:is([data-theme="default"], [data-theme="default"] *) {
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="default"],
+  [data-theme="default"] *
+)::-moz-selection,
+pre[class*="language-"]:is([data-theme="default"], [data-theme="default"] *)
+  ::-moz-selection,
+code[class*="language-"]:is(
+  [data-theme="default"],
+  [data-theme="default"] *
+)::-moz-selection,
+code[class*="language-"]:is([data-theme="default"], [data-theme="default"] *)
+  ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="default"],
+  [data-theme="default"] *
+)::selection,
+pre[class*="language-"]:is([data-theme="default"], [data-theme="default"] *)
+  ::selection,
+code[class*="language-"]:is(
+  [data-theme="default"],
+  [data-theme="default"] *
+)::selection,
+code[class*="language-"]:is([data-theme="default"], [data-theme="default"] *)
+  ::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  code[class*="language-"]:is([data-theme="default"], [data-theme="default"] *),
+  pre[class*="language-"]:is([data-theme="default"], [data-theme="default"] *) {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre[class*="language-"]:is([data-theme="default"], [data-theme="default"] *) {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre):is([data-theme="default"], [data-theme="default"] *)
+  > code[class*="language-"],
+pre[class*="language-"]:is([data-theme="default"], [data-theme="default"] *) {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre):is([data-theme="default"], [data-theme="default"] *)
+> code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment:is([data-theme="default"], [data-theme="default"] *),
+.token.prolog:is([data-theme="default"], [data-theme="default"] *),
+.token.doctype:is([data-theme="default"], [data-theme="default"] *),
+.token.cdata:is([data-theme="default"], [data-theme="default"] *) {
+  color: slategray;
+}
+
+.token.punctuation:is([data-theme="default"], [data-theme="default"] *) {
+  color: #999;
+}
+
+.token.namespace:is([data-theme="default"], [data-theme="default"] *) {
+  opacity: 0.7;
+}
+
+.token.property:is([data-theme="default"], [data-theme="default"] *),
+.token.tag:is([data-theme="default"], [data-theme="default"] *),
+.token.boolean:is([data-theme="default"], [data-theme="default"] *),
+.token.number:is([data-theme="default"], [data-theme="default"] *),
+.token.constant:is([data-theme="default"], [data-theme="default"] *),
+.token.symbol:is([data-theme="default"], [data-theme="default"] *),
+.token.deleted:is([data-theme="default"], [data-theme="default"] *) {
+  color: #905;
+}
+
+.token.selector:is([data-theme="default"], [data-theme="default"] *),
+.token.attr-name:is([data-theme="default"], [data-theme="default"] *),
+.token.string:is([data-theme="default"], [data-theme="default"] *),
+.token.char:is([data-theme="default"], [data-theme="default"] *),
+.token.builtin:is([data-theme="default"], [data-theme="default"] *),
+.token.inserted:is([data-theme="default"], [data-theme="default"] *) {
+  color: #690;
+}
+
+.token.operator:is([data-theme="default"], [data-theme="default"] *),
+.token.entity:is([data-theme="default"], [data-theme="default"] *),
+.token.url:is([data-theme="default"], [data-theme="default"] *),
+.language-css:is([data-theme="default"], [data-theme="default"] *)
+  .token.string,
+.style:is([data-theme="default"], [data-theme="default"] *) .token.string {
+  color: #9a6e3a;
+  /* This background color was intended by the author of this theme. */
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.token.atrule:is([data-theme="default"], [data-theme="default"] *),
+.token.attr-value:is([data-theme="default"], [data-theme="default"] *),
+.token.keyword:is([data-theme="default"], [data-theme="default"] *) {
+  color: #07a;
+}
+
+.token.function:is([data-theme="default"], [data-theme="default"] *),
+.token.class-name:is([data-theme="default"], [data-theme="default"] *) {
+  color: #dd4a68;
+}
+
+.token.regex:is([data-theme="default"], [data-theme="default"] *),
+.token.important:is([data-theme="default"], [data-theme="default"] *),
+.token.variable:is([data-theme="default"], [data-theme="default"] *) {
+  color: #e90;
+}
+
+.token.important:is([data-theme="default"], [data-theme="default"] *),
+.token.bold:is([data-theme="default"], [data-theme="default"] *) {
+  font-weight: bold;
+}
+.token.italic:is([data-theme="default"], [data-theme="default"] *) {
+  font-style: italic;
+}
+
+.token.entity:is([data-theme="default"], [data-theme="default"] *) {
+  cursor: help;
+}

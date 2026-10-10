@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <!-- Original Open UI Editor artwork, distributed under the project MIT license. -->
+  <title id="title">Video preview placeholder</title>
+  <rect width="640" height="360" rx="12" fill="#f4f4f5" />
+  <rect x="24" y="24" width="592" height="312" rx="8" fill="#fafafa" stroke="#d4d4d8" stroke-width="2" />
+  <circle cx="320" cy="166" r="42" fill="#e4e4e7" />
+  <path d="M310 143 342 166 310 189Z" fill="#71717a" />
+  <rect x="244" y="236" width="152" height="8" rx="4" fill="#d4d4d8" />
+  <rect x="276" y="258" width="88" height="6" rx="3" fill="#e4e4e7" />
+</svg>

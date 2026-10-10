@@ -1,0 +1,203 @@
+/*
+ * Adapted from https://raw.githubusercontent.com/PrismJS/prism-themes/447479fc7b2be2051fe27e561aceed7cc87a589f/themes/prism-vs.css
+ * License: MIT; see LICENSE-PRISM-THEMES.txt.
+ * Selectors are scoped to the editor's data-theme="vs" attribute.
+ */
+
+/**
+ * VS theme by Andrew Lock (https://andrewlock.net)
+ * Inspired by Visual Studio syntax coloring
+ */
+
+code[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *),
+pre[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #393a34;
+  font-family:
+    "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-size: 0.9em;
+  line-height: 1.2em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre:is([data-theme="vs"], [data-theme="vs"] *) > code[class*="language-"] {
+  font-size: 1em;
+}
+
+pre[class*="language-"]:is(
+  [data-theme="vs"],
+  [data-theme="vs"] *
+)::-moz-selection,
+pre[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *)
+  ::-moz-selection,
+code[class*="language-"]:is(
+  [data-theme="vs"],
+  [data-theme="vs"] *
+)::-moz-selection,
+code[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *)
+  ::-moz-selection {
+  background: #c1def1;
+}
+
+pre[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *)::selection,
+pre[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *) ::selection,
+code[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *)::selection,
+code[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *)
+  ::selection {
+  background: #c1def1;
+}
+
+/* Code blocks */
+pre[class*="language-"]:is([data-theme="vs"], [data-theme="vs"] *) {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border: 1px solid #dddddd;
+  background-color: white;
+}
+
+/* Inline code */
+:not(pre):is([data-theme="vs"], [data-theme="vs"] *)
+> code[class*="language-"] {
+  padding: 0.2em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #f8f8f8;
+  border: 1px solid #dddddd;
+}
+
+.token.comment:is([data-theme="vs"], [data-theme="vs"] *),
+.token.prolog:is([data-theme="vs"], [data-theme="vs"] *),
+.token.doctype:is([data-theme="vs"], [data-theme="vs"] *),
+.token.cdata:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #008000;
+  font-style: italic;
+}
+
+.token.namespace:is([data-theme="vs"], [data-theme="vs"] *) {
+  opacity: 0.7;
+}
+
+.token.string:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #a31515;
+}
+
+.token.punctuation:is([data-theme="vs"], [data-theme="vs"] *),
+.token.operator:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #393a34; /* no highlight */
+}
+
+.token.url:is([data-theme="vs"], [data-theme="vs"] *),
+.token.symbol:is([data-theme="vs"], [data-theme="vs"] *),
+.token.number:is([data-theme="vs"], [data-theme="vs"] *),
+.token.boolean:is([data-theme="vs"], [data-theme="vs"] *),
+.token.variable:is([data-theme="vs"], [data-theme="vs"] *),
+.token.constant:is([data-theme="vs"], [data-theme="vs"] *),
+.token.inserted:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #36acaa;
+}
+
+.token.atrule:is([data-theme="vs"], [data-theme="vs"] *),
+.token.keyword:is([data-theme="vs"], [data-theme="vs"] *),
+.token.attr-value:is([data-theme="vs"], [data-theme="vs"] *),
+.language-autohotkey:is([data-theme="vs"], [data-theme="vs"] *) .token.selector,
+.language-json:is([data-theme="vs"], [data-theme="vs"] *) .token.boolean,
+.language-json:is([data-theme="vs"], [data-theme="vs"] *) .token.number,
+code[class*="language-css"]:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #0000ff;
+}
+
+.token.function:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #393a34;
+}
+
+.token.deleted:is([data-theme="vs"], [data-theme="vs"] *),
+.language-autohotkey:is([data-theme="vs"], [data-theme="vs"] *) .token.tag {
+  color: #9a050f;
+}
+
+.token.selector:is([data-theme="vs"], [data-theme="vs"] *),
+.language-autohotkey:is([data-theme="vs"], [data-theme="vs"] *) .token.keyword {
+  color: #00009f;
+}
+
+.token.important:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #e90;
+}
+
+.token.important:is([data-theme="vs"], [data-theme="vs"] *),
+.token.bold:is([data-theme="vs"], [data-theme="vs"] *) {
+  font-weight: bold;
+}
+
+.token.italic:is([data-theme="vs"], [data-theme="vs"] *) {
+  font-style: italic;
+}
+
+.token.class-name:is([data-theme="vs"], [data-theme="vs"] *),
+.language-json:is([data-theme="vs"], [data-theme="vs"] *) .token.property {
+  color: #2b91af;
+}
+
+.token.tag:is([data-theme="vs"], [data-theme="vs"] *),
+.token.selector:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #800000;
+}
+
+.token.attr-name:is([data-theme="vs"], [data-theme="vs"] *),
+.token.property:is([data-theme="vs"], [data-theme="vs"] *),
+.token.regex:is([data-theme="vs"], [data-theme="vs"] *),
+.token.entity:is([data-theme="vs"], [data-theme="vs"] *) {
+  color: #ff0000;
+}
+
+.token.directive.tag:is([data-theme="vs"], [data-theme="vs"] *) .tag {
+  background: #ffff00;
+  color: #393a34;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers.line-numbers:is([data-theme="vs"], [data-theme="vs"] *)
+.line-numbers-rows {
+  border-right-color: #a5a5a5;
+}
+
+.line-numbers:is([data-theme="vs"], [data-theme="vs"] *)
+  .line-numbers-rows
+  > span:before {
+  color: #2b91af;
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight.line-highlight:is([data-theme="vs"], [data-theme="vs"] *) {
+  background: rgba(193, 222, 241, 0.2);
+  /*
+ biome-ignore lint/suspicious/noDuplicateProperties: Preserve the upstream solid-color fallback and prefixed gradient.
+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(193, 222, 241, 0.2) 70%,
+    rgba(221, 222, 241, 0)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(193, 222, 241, 0.2) 70%,
+    rgba(221, 222, 241, 0)
+  );
+}

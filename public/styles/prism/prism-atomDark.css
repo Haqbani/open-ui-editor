@@ -1,0 +1,152 @@
+/*
+ * Adapted from https://raw.githubusercontent.com/PrismJS/prism-themes/447479fc7b2be2051fe27e561aceed7cc87a589f/themes/prism-atom-dark.css
+ * License: MIT; see LICENSE-PRISM-THEMES.txt.
+ * Selectors are scoped to the editor's data-theme="atomDark" attribute.
+ */
+
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+
+code[class*="language-"]:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+pre[class*="language-"]:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #c5c8c6;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"]:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre):is([data-theme="atomDark"], [data-theme="atomDark"] *)
+  > code[class*="language-"],
+pre[class*="language-"]:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  background: #1d1f21;
+}
+
+/* Inline code */
+:not(pre):is([data-theme="atomDark"], [data-theme="atomDark"] *)
+> code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+
+.token.comment:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.prolog:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.doctype:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.cdata:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #7c7c7c;
+}
+
+.token.punctuation:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #c5c8c6;
+}
+
+.namespace:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  opacity: 0.7;
+}
+
+.token.property:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.keyword:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.tag:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #96cbfe;
+}
+
+.token.class-name:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #ffffb6;
+  text-decoration: underline;
+}
+
+.token.boolean:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.constant:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #99cc99;
+}
+
+.token.symbol:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.deleted:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #f92672;
+}
+
+.token.number:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #ff73fd;
+}
+
+.token.selector:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.attr-name:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.string:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.char:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.builtin:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.inserted:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #a8ff60;
+}
+
+.token.variable:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #c6c5fe;
+}
+
+.token.operator:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #ededed;
+}
+
+.token.entity:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #ffffb6;
+  cursor: help;
+}
+
+.token.url:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #96cbfe;
+}
+
+.language-css:is([data-theme="atomDark"], [data-theme="atomDark"] *)
+  .token.string,
+.style:is([data-theme="atomDark"], [data-theme="atomDark"] *) .token.string {
+  color: #87c38a;
+}
+
+.token.atrule:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.attr-value:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #f9ee98;
+}
+
+.token.function:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #dad085;
+}
+
+.token.regex:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #e9c062;
+}
+
+.token.important:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  color: #fd971f;
+}
+
+.token.important:is([data-theme="atomDark"], [data-theme="atomDark"] *),
+.token.bold:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  font-weight: bold;
+}
+
+.token.italic:is([data-theme="atomDark"], [data-theme="atomDark"] *) {
+  font-style: italic;
+}

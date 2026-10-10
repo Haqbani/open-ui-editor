@@ -1,0 +1,82 @@
+/*
+ * Original Prism adaptation of the Vesper palette by Rauno Freiberg.
+ * Palette source: https://github.com/raunofreiberg/vesper/blob/9043f3849b776949445f0cd4990365959cca35a3/themes/Vesper-dark-color-theme.json
+ * Palette license: MIT; see LICENSE-VESPER.txt.
+ * CSS adaptation: Open UI Editor contributors, MIT.
+ */
+
+pre[data-theme="vesper"] {
+  background: #101010;
+  color: #fff;
+  font-family: ui-monospace, "Commit Mono", monospace;
+  font-size: 1em;
+  line-height: 1.5;
+  overflow: auto;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+}
+
+pre[data-theme="vesper"] code {
+  color: inherit;
+  font: inherit;
+}
+
+pre[data-theme="vesper"]::selection,
+pre[data-theme="vesper"] ::selection {
+  background: #ffffff25;
+  text-shadow: none;
+}
+
+pre[data-theme="vesper"] :is(.token.comment, .token.prolog, .token.cdata) {
+  color: #8b8b8b94;
+}
+
+pre[data-theme="vesper"]
+  :is(.token.keyword, .token.operator, .token.punctuation, .token.atrule) {
+  color: #a0a0a0;
+}
+
+pre[data-theme="vesper"]
+  :is(
+    .token.tag,
+    .token.function,
+    .token.class-name,
+    .token.number,
+    .token.boolean,
+    .token.constant,
+    .token.builtin,
+    .token.changed
+  ) {
+  color: #ffc799;
+}
+
+pre[data-theme="vesper"]
+  :is(
+    .token.string,
+    .token.char,
+    .token.symbol,
+    .token.attr-value,
+    .token.regex,
+    .token.inserted
+  ) {
+  color: #99ffe4;
+}
+
+pre[data-theme="vesper"] :is(.token.deleted, .token.invalid) {
+  color: #ff8080;
+}
+
+pre[data-theme="vesper"]
+  :is(.token.variable, .token.property, .token.attr-name) {
+  color: #fff;
+}
+
+pre[data-theme="vesper"] :is(.token.important, .token.bold) {
+  font-weight: 700;
+}
+
+pre[data-theme="vesper"] .token.italic {
+  font-style: italic;
+}
